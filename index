@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRYX | Intelligent Business Systems</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="min-h-screen font-sans selection:bg-[#00B8A9]/30 bg-[#050505] text-zinc-50 scroll-smooth">
+
+    <nav class="fixed top-0 z-50 w-full border-b bg-[#050505]/80 border-zinc-900/80 backdrop-blur-md">
+        <div class="flex items-center justify-between h-20 px-6 mx-auto max-w-7xl md:px-12">
+            <div class="flex items-center gap-1 text-2xl font-bold tracking-tighter">
+                <span>PRY</span>
+                <span class="text-[#00B8A9]">X</span>
+            </div>
+            <div class="hidden gap-8 text-sm font-medium lg:flex text-zinc-400">
+                <a href="#solutions" class="transition-colors hover:text-white">Solutions</a>
+                <a href="#demo" class="transition-colors hover:text-white">Demo</a>
+                <a href="#process" class="transition-colors hover:text-white">Process</a>
+                <a href="#about" class="transition-colors hover:text-white">About</a>
+                <a href="#contact" class="transition-colors hover:text-white">Contact</a>
+            </div>
+            <div class="hidden lg:block">
+                <button onclick="handleBookingClick()" class="px-5 py-2.5 text-sm font-medium text-white transition-all bg-[#00B8A9] rounded-md hover:bg-[#009b8e] active:scale-95">
+                    Book Discovery Call
+                </button>
+            </div>
+            <button class="lg:hidden text-zinc-400 hover:text-white">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section class="relative px-6 pt-40 pb-24 overflow-hidden md:pt-52 md:pb-32 lg:px-12">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 mb-8 text-xs font-semibold tracking-wide uppercase border rounded-full text-zinc-300 border-zinc-800 bg-zinc-900/50">
+                <span class="w-2 h-2 rounded-full bg-[#00B8A9]"></span>
+                AI-Powered Business Systems
+            </div>
+            <h1 class="text-5xl font-bold tracking-tighter text-white md:text-7xl lg:text-8xl">
+                Eliminate Repetitive Work. <br />
+                <span class="text-zinc-500">Scale Smarter.</span>
+            </h1>
+            <p class="max-w-2xl mx-auto mt-8 text-lg leading-relaxed md:text-xl text-zinc-400">
+                PRYX helps businesses automate workflows, qualify leads, organize knowledge, and improve operational efficiency through intelligent systems and AI-powered assistants.
+            </p>
+            <div class="flex flex-col items-center justify-center gap-4 mt-12 sm:flex-row">
+                <a href="#demo" class="flex items-center justify-center w-full gap-2 px-6 py-3 font-medium transition-colors border rounded-md sm:w-auto text-zinc-300 border-zinc-700 hover:bg-zinc-900 hover:text-white active:scale-95">
+                    See Demo <i data-feather="play" style="width: 16px; height: 16px;"></i>
+                </a>
+                <button onclick="handleBookingClick()" class="w-full px-6 py-3 font-medium text-white transition-all bg-[#00B8A9] rounded-md sm:w-auto hover:bg-[#009b8e] active:scale-95">
+                    Book Discovery Call
+                </button>
+            </div>
+
+            <div class="w-full max-w-4xl mx-auto mt-20 border rounded-xl bg-[#0a0a0b] border-zinc-800/80 shadow-2xl overflow-hidden shadow-[#00B8A9]/5">
+                <div class="flex items-center gap-2 px-4 py-3 border-b bg-zinc-900/50 border-zinc-800/80">
+                    <div class="w-3 h-3 rounded-full bg-zinc-700"></div>
+                    <div class="w-3 h-3 rounded-full bg-zinc-700"></div>
+                    <div class="w-3 h-3 rounded-full bg-zinc-700"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-4 min-h-[350px]">
+                    <div class="hidden border-r md:block bg-zinc-900/20 border-zinc-800/80 p-4 space-y-4">
+                        <div class="w-full h-8 rounded bg-zinc-800/50"></div>
+                        <div class="w-3/4 h-4 rounded bg-zinc-800/30"></div>
+                        <div class="w-1/2 h-4 rounded bg-zinc-800/30"></div>
+                    </div>
+                    <div class="col-span-3 p-6 bg-zinc-950">
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="w-48 h-6 rounded bg-zinc-800/50"></div>
+                            <div class="px-3 py-1 text-xs text-[#00B8A9] rounded bg-[#00B8A9]/10 border border-[#00B8A9]/20">System Online</div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 mt-4">
+                            <div class="p-4 border rounded-lg bg-zinc-900/50 border-zinc-800/50 text-left">
+                                <div class="text-xs font-medium text-zinc-500 uppercase tracking-wider mb-1">Leads Qualified</div>
+                                <div class="text-3xl font-bold text-white">2,847</div>
+                                <div class="text-xs text-emerald-400 mt-2 flex items-center gap-1">
+                                    <i data-feather="trending-up" style="width: 12px; height: 12px;"></i> +14% this week
+                                </div>
+                            </div>
+                            <div class="p-4 border rounded-lg bg-zinc-900/50 border-zinc-800/50 text-left">
+                                <div class="text-xs font-medium text-zinc-500 uppercase tracking-wider mb-1">Hours Saved</div>
+                                <div class="text-3xl font-bold text-[#00B8A9]">142.5</div>
+                                <div class="text-xs text-zinc-400 mt-2">Via Workflow Automation</div>
+                            </div>
+                        </div>
+                        <div class="w-full mt-4 border rounded-lg bg-zinc-900/30 border-zinc-800/50 p-4 text-left">
+                            <div class="text-xs font-medium text-zinc-500 mb-3">RECENT AGENT ACTIVITY</div>
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-between text-sm">
+                                    <div class="flex items-center gap-2 text-zinc-300">
+                                        <div class="w-2 h-2 rounded-full bg-[#00B8A9]"></div> Follow-up email sent to Client X
+                                    </div>
+                                    <div class="text-zinc-600 text-xs">Just now</div>
+                                </div>
+                                <div class="flex items-center justify-between text-sm">
+                                    <div class="flex items-center gap-2 text-zinc-300">
+                                        <div class="w-2 h-2 rounded-full bg-blue-500"></div> Lead scored [98/100] - Added to CRM
+                                    </div>
+                                    <div class="text-zinc-600 text-xs">2m ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-6 py-32 bg-[#0a0a0b] border-t border-zinc-900/80 lg:px-12 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#0f0f11_1px,transparent_1px),linear-gradient(to_bottom,#0f0f11_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none opacity-60"></div>
+        <div class="mx-auto max-w-7xl relative z-10">
+            <div class="mb-20 max-w-2xl">
+                <div class="text-xs font-semibold text-[#00B8A9] tracking-wider uppercase mb-3 flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#00B8A9]"></span> Operational Friction
+                </div>
+                <h2 class="text-3xl font-bold tracking-tight text-white md:text-5xl">Common Business Bottlenecks</h2>
+                <p class="mt-4 text-base text-zinc-400 leading-relaxed">Most growing enterprises suffer from systemic leakages across their core infrastructure. We map and eliminate them permanently.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-6 gap-6">
+                <div class="md:col-span-4 p-8 border rounded-xl bg-zinc-950/80 border-zinc-900 hover:border-zinc-800/80 transition-all duration-300 group flex flex-col justify-between min-h-[260px] relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-red-500/5 blur-2xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div>
+                        <div class="w-10 h-10 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center mb-6 text-red-400 group-hover:scale-105 transition-transform">
+                            <i data-feather="user-x" style="width: 18px; height: 18px;"></i>
+                        </div>
+                        <h3 class="mb-3 text-xl font-semibold text-white tracking-tight">Leads Falling Through The Cracks</h3>
+                        <p class="text-sm leading-relaxed text-zinc-400 max-w-md">Manual qualification and fragmented follow-ups waste massive pipeline opportunities. Without structured automation, high-intent revenue prospects vanish into unmonitored drop points.</p>
+                    </div>
+                    <div class="mt-6 flex items-center gap-1.5 text-xs font-mono text-zinc-600 uppercase tracking-wider group-hover:text-zinc-500 transition-colors">
+                        Leakage vector <span class="text-red-500/70">[High Severity]</span>
+                    </div>
+                </div>
+
+                <div class="md:col-span-2 p-8 border rounded-xl bg-zinc-950/80 border-zinc-900 hover:border-zinc-800/80 transition-all duration-300 group flex flex-col justify-between min-h-[260px]">
+                    <div>
+                        <div class="w-10 h-10 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center mb-6 text-amber-500 group-hover:scale-105 transition-transform">
+                            <i data-feather="clock" style="width: 18px; height: 18px;"></i>
+                        </div>
+                        <h3 class="mb-3 text-lg font-semibold text-white tracking-tight">Repetitive Tasks Consuming Time</h3>
+                        <p class="text-xs leading-relaxed text-zinc-400">High-value talent teams spend continuous weekly cycles on basic data processing that should run natively via automated script pipelines.</p>
+                    </div>
+                    <div class="mt-6 text-xs font-mono text-zinc-600 uppercase tracking-wider">
+                        Efficiency deficit
+                    </div>
+                </div>
+
+                <div class="md:col-span-2 p-8 border rounded-xl bg-zinc-950/80 border-zinc-900 hover:border-zinc-800/80 transition-all duration-300 group flex flex-col justify-between min-h-[260px]">
+                    <div>
+                        <div class="w-10 h-10 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center mb-6 text-orange-400 group-hover:scale-105 transition-transform">
+                            <i data-feather="zap-off" style="width: 18px; height: 18px;"></i>
+                        </div>
+                        <h3 class="mb-3 text-lg font-semibold text-white tracking-tight">Slow Response Times</h3>
+                        <p class="text-xs leading-relaxed text-zinc-400">Communication gaps create friction points. Delayed replies cause customer degradation, forcing intent targets to drift to agile competitors.</p>
+                    </div>
+                    <div class="mt-6 text-xs font-mono text-zinc-600 uppercase tracking-wider">
+                        Response decay
+                    </div>
+                </div>
+
+                <div class="md:col-span-4 p-8 border rounded-xl bg-zinc-950/80 border-zinc-900 hover:border-zinc-800/80 transition-all duration-300 group flex flex-col justify-between min-h-[260px] relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/5 blur-2xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div>
+                        <div class="w-10 h-10 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center mb-6 text-blue-400 group-hover:scale-105 transition-transform">
+                            <i data-feather="alert-circle" style="width: 18px; height: 18px;"></i>
+                        </div>
+                        <h3 class="mb-3 text-xl font-semibold text-white tracking-tight">Scattered Company Knowledge</h3>
+                        <p class="text-sm leading-relaxed text-zinc-400 max-w-md">Critical corporate information is trapped inside isolated silos, unstructured text, and dark document folders, creating heavy execution overhead whenever teams attempt to retrieve cross-functional data layouts.</p>
+                    </div>
+                    <div class="mt-6 flex items-center gap-1.5 text-xs font-mono text-zinc-600 uppercase tracking-wider group-hover:text-zinc-500 transition-colors">
+                        Knowledge asset mismatch
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solutions" class="px-6 py-24 lg:px-12">
+        <div class="mx-auto max-w-7xl">
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-white md:text-4xl">How PRYX Helps</h2>
+            </div>
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                <div class="p-8 border rounded-xl bg-zinc-900/20 border-zinc-900 hover:border-zinc-800 transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center mb-6 text-[#00B8A9]">
+                        <i data-feather="users"></i>
+                    </div>
+                    <h3 class="mb-3 text-xl font-medium text-white group-hover:text-[#00B8A9] transition-colors">Lead Qualification Systems</h3>
+                    <p class="text-zinc-400 leading-relaxed">Automatically capture, qualify, and organize incoming leads seamlessly without manual interaction.</p>
+                </div>
+                <div class="p-8 border rounded-xl bg-zinc-900/20 border-zinc-900 hover:border-zinc-800 transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center mb-6 text-[#00B8A9]">
+                        <i data-feather="database"></i>
+                    </div>
+                    <h3 class="mb-3 text-xl font-medium text-white group-hover:text-[#00B8A9] transition-colors">Internal Knowledge Assistants</h3>
+                    <p class="text-zinc-400 leading-relaxed">Instant access to corporate files, protocols, and technical documentation via conversational vectors.</p>
+                </div>
+                <div class="p-8 border rounded-xl bg-zinc-900/20 border-zinc-900 hover:border-zinc-800 transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center mb-6 text-[#00B8A9]">
+                        <i data-feather="git-branch"></i>
+                    </div>
+                    <h3 class="mb-3 text-xl font-medium text-white group-hover:text-[#00B8A9] transition-colors">Workflow Automation</h3>
+                    <p class="text-zinc-400 leading-relaxed">Eliminate friction by building complex pipelines connecting data platforms across company operational hubs.</p>
+                </div>
+                <div class="p-8 border rounded-xl bg-zinc-900/20 border-zinc-900 hover:border-zinc-800 transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center mb-6 text-[#00B8A9]">
+                        <i data-feather="sliders"></i>
+                    </div>
+                    <h3 class="mb-3 text-xl font-medium text-white group-hover:text-[#00B8A9] transition-colors">CRM Optimization</h3>
+                    <p class="text-zinc-400 leading-relaxed">Maintain data integrity dynamically, mapping every engagement to trigger automatic business logic execution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" class="px-6 py-28 bg-[#0a0a0b] border-y border-zinc-900 lg:px-12">
+        <div class="mx-auto max-w-7xl">
+            <div class="mb-16 text-center">
+                <h2 class="text-3xl font-bold tracking-tight text-white md:text-4xl">See PRYX In Action</h2>
+                <p class="mt-4 text-lg text-zinc-400">Experience how intelligent systems can improve business operations.</p>
+            </div>
+            <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+                
+                <div class="flex flex-col border bg-zinc-950 border-zinc-800/80 rounded-xl overflow-hidden">
+                    <div class="p-4 border-b border-zinc-900 bg-zinc-900/30 flex items-center justify-between">
+                        <span class="text-sm font-medium text-zinc-300 flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-blue-500"></span> Video System Deep Dive
+                        </span>
+                    </div>
+                    <div class="relative w-full aspect-video flex items-center justify-center bg-zinc-950">
+                        
+                        <div class="text-zinc-500 text-sm border border-zinc-800 px-4 py-2 rounded">Paste Loom Iframe Code Here</div>
+                        
+                    </div>
+                </div>
+
+                <div class="flex flex-col h-full border bg-zinc-950 border-zinc-800/80 rounded-xl overflow-hidden min-h-[350px]">
+                    <div class="p-4 border-b border-zinc-900 bg-zinc-900/30 flex items-center justify-between">
+                        <span class="text-sm font-medium text-zinc-300 flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-[#00B8A9]"></span> Core Agent Interface
+                        </span>
+                    </div>
+                    <div id="pryx-bot-container" class="flex-1 p-6 flex flex-col justify-between relative bg-zinc-950">
+                        <div class="space-y-4">
+                            <div class="max-w-[80%] p-3 text-sm rounded-lg bg-zinc-900 text-zinc-300">
+                                Welcome. Ask me how PRYX configures custom automation.
+                            </div>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-zinc-900">
+                            <div class="w-full p-3 text-sm border rounded bg-zinc-900/50 border-zinc-800 text-zinc-600">
+                                Assistant Sandbox Active
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="px-6 py-24 lg:px-12">
+        <div class="mx-auto max-w-7xl">
+            <h2 class="mb-16 text-3xl font-bold tracking-tight text-white md:text-4xl">Simple Process. Real Results.</h2>
+            <div class="grid grid-cols-1 gap-12 md:grid-cols-4">
+                <div class="relative">
+                    <div class="text-2xl font-bold text-[#00B8A9] mb-4">01</div>
+                    <h3 class="mb-2 text-xl font-medium text-white">Discover</h3>
+                    <p class="text-sm leading-relaxed text-zinc-400">Understand workflows, challenges, and opportunities.</p>
+                    <div class="hidden md:block absolute top-4 left-16 w-full h-px bg-zinc-900"></div>
+                </div>
+                <div class="relative">
+                    <div class="text-2xl font-bold text-[#00B8A9] mb-4">02</div>
+                    <h3 class="mb-2 text-xl font-medium text-white">Design</h3>
+                    <p class="text-sm leading-relaxed text-zinc-400">Create an intelligent solution tailored to the business.</p>
+                    <div class="hidden md:block absolute top-4 left-16 w-full h-px bg-zinc-900"></div>
+                </div>
+                <div class="relative">
+                    <div class="text-2xl font-bold text-[#00B8A9] mb-4">03</div>
+                    <h3 class="mb-2 text-xl font-medium text-white">Implement</h3>
+                    <p class="text-sm leading-relaxed text-zinc-400">Deploy systems and automate operations.</p>
+                    <div class="hidden md:block absolute top-4 left-16 w-full h-px bg-zinc-900"></div>
+                </div>
+                <div class="relative">
+                    <div class="text-2xl font-bold text-[#00B8A9] mb-4">04</div>
+                    <h3 class="mb-2 text-xl font-medium text-white">Optimize</h3>
+                    <p class="text-sm leading-relaxed text-zinc-400">Continuously improve performance and outcomes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="px-6 py-24 bg-[#0a0a0b] border-y border-zinc-900 lg:px-12">
+        <div class="grid grid-cols-1 gap-16 mx-auto max-w-7xl lg:grid-cols-2">
+            <div>
+                <h2 class="mb-6 text-3xl font-bold tracking-tight text-white md:text-4xl">Built For Practical Business Outcomes</h2>
+                <p class="text-lg leading-relaxed text-zinc-400">
+                    PRYX focuses on solving real operational challenges rather than implementing technology for the sake of technology. Every system is designed to reduce manual work, improve efficiency, and help businesses scale more effectively.
+                </p>
+            </div>
+            <div class="space-y-8">
+                <div class="flex items-start gap-4">
+                    <div class="text-[#00B8A9] mt-1"><i data-feather="check-circle" style="width:20px; height:20px;"></i></div>
+                    <div>
+                        <h4 class="font-medium text-white">Business First Approach</h4>
+                        <p class="mt-1 text-sm text-zinc-400">Operational processes determine the architecture, not trendy gimmicks.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="text-[#00B8A9] mt-1"><i data-feather="check-circle" style="width:20px; height:20px;"></i></div>
+                    <div>
+                        <h4 class="font-medium text-white">Intelligent Automation</h4>
+                        <p class="mt-1 text-sm text-zinc-400">Dynamic system nodes equipped to route context pipelines accurately.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="text-[#00B8A9] mt-1"><i data-feather="check-circle" style="width:20px; height:20px;"></i></div>
+                    <div>
+                        <h4 class="font-medium text-white">Scalable Systems</h4>
+                        <p class="mt-1 text-sm text-zinc-400">Clean foundations designed to easily compound volume without engineering overhead.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative px-6 py-32 overflow-hidden lg:px-12">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,184,169,0.06),transparent_50%)]"></div>
+        <div class="relative max-w-3xl mx-auto text-center">
+            <h2 class="text-4xl font-bold tracking-tight text-white md:text-5xl">Ready To Eliminate Repetitive Work?</h2>
+            <p class="mt-6 text-lg text-zinc-400">Let's explore how intelligent systems can help your business operate more efficiently.</p>
+            <button onclick="handleBookingClick()" class="inline-flex items-center gap-2 px-8 py-4 mt-10 text-base font-semibold text-white transition-all bg-[#00B8A9] rounded-md hover:bg-[#009b8e] active:scale-95 shadow-xl shadow-[#00B8A9]/10">
+                Book Discovery Call <i data-feather="arrow-right" style="width:18px; height:18px;"></i>
+            </button>
+        </div>
+    </section>
+
+    <section id="contact" class="relative px-6 py-32 bg-[#0a0a0b] border-t border-zinc-900 lg:px-12 overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-64 bg-[#00B8A9]/5 blur-[120px] rounded-full pointer-events-none"></div>
+        <div class="mx-auto max-w-5xl relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-white md:text-5xl mb-4">Start Scaling Smarter</h2>
+                <p class="text-lg text-zinc-400">Book a discovery call or drop us a message to see how we can streamline your operations.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 bg-zinc-900/20 border border-zinc-800/80 rounded-2xl p-2 backdrop-blur-sm shadow-2xl">
+                
+                <div class="lg:col-span-2 bg-zinc-950 rounded-xl p-8 border border-zinc-800/50 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-semibold text-white mb-2">What happens next?</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed mb-8">We will review your current bottlenecks and prepare a custom blueprint showing exactly where AI can save you time and money.</p>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-[#00B8A9]/10 flex items-center justify-center text-[#00B8A9] shrink-0 border border-[#00B8A9]/20">
+                                    <i data-feather="clock" style="width: 16px; height: 16px;"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-medium text-white">Fast Response</h4>
+                                    <p class="text-xs text-zinc-500 mt-1">We typically reply within 2 hours.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-[#00B8A9]/10 flex items-center justify-center text-[#00B8A9] shrink-0 border border-[#00B8A9]/20">
+                                    <i data-feather="video" style="width: 16px; height: 16px;"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-medium text-white">No-Pressure Call</h4>
+                                    <p class="text-xs text-zinc-500 mt-1">A simple chat about your workflows.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-8 mt-8 border-t border-zinc-900">
+                        <a href="mailto:hello@pryx.com" class="flex items-center gap-2 text-sm text-zinc-400 hover:text-white transition-colors mb-3">
+                            <i data-feather="mail" style="width:16px; height:16px;"></i> hello@pryx.com
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-3 p-8">
+                    <form action="https://formspree.io/f/YOUR_ENDPOINT_HERE" method="POST" class="space-y-5">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div class="space-y-1.5">
+                                <label class="text-xs font-medium text-zinc-400 pl-1">First Name</label>
+                                <input type="text" name="firstName" class="w-full px-4 py-3.5 text-sm text-white transition-all bg-zinc-900/50 border border-zinc-800 rounded-lg focus:outline-none focus:border-[#00B8A9] focus:bg-zinc-900 focus:ring-1 focus:ring-[#00B8A9]" required />
+                            </div>
+                            <div class="space-y-1.5">
+                                <label class="text-xs font-medium text-zinc-400 pl-1">Last Name</label>
+                                <input type="text" name="lastName" class="w-full px-4 py-3.5 text-sm text-white transition-all bg-zinc-900/50 border border-zinc-800 rounded-lg focus:outline-none focus:border-[#00B8A9] focus:bg-zinc-900 focus:ring-1 focus:ring-[#00B8A9]" required />
+                            </div>
+                        </div>
+                        <div class="space-y-1.5">
+                            <label class="text-xs font-medium text-zinc-400 pl-1">Work Email</label>
+                            <input type="email" name="email" class="w-full px-4 py-3.5 text-sm text-white transition-all bg-zinc-900/50 border border-zinc-800 rounded-lg focus:outline-none focus:border-[#00B8A9] focus:bg-zinc-900 focus:ring-1 focus:ring-[#00B8A9]" required />
+                        </div>
+                        <div class="space-y-1.5">
+                            <label class="text-xs font-medium text-zinc-400 pl-1">What challenges are you trying to solve?</label>
+                            <textarea name="message" rows="4" class="w-full px-4 py-3.5 text-sm text-white transition-all bg-zinc-900/50 border border-zinc-800 rounded-lg resize-none focus:outline-none focus:border-[#00B8A9] focus:bg-zinc-900 focus:ring-1 focus:ring-[#00B8A9]" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full flex items-center justify-center gap-2 px-6 py-4 font-semibold text-sm text-zinc-950 bg-white rounded-lg hover:bg-zinc-200 active:scale-[0.98] transition-all mt-2">
+                            Send Request <i data-feather="send" style="width: 16px; height: 16px;"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="px-6 py-12 border-t border-zinc-900 lg:px-12 bg-[#050505]">
+        <div class="flex flex-col items-center justify-between gap-6 mx-auto max-w-7xl md:flex-row">
+            <div class="flex flex-col items-center gap-1 md:items-start">
+                <div class="flex items-center gap-1 text-xl font-bold tracking-tighter">
+                    <span>PRY</span><span class="text-[#00B8A9]">X</span>
+                </div>
+                <span class="text-xs text-zinc-500">Intelligent Systems For Growing Businesses</span>
+            </div>
+            <div class="flex gap-6 text-xs text-zinc-400">
+                <a href="#solutions" class="hover:text-white transition-colors">Solutions</a>
+                <a href="#demo" class="hover:text-white transition-colors">Demo</a>
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </div>
+            <div class="text-xs text-zinc-600">
+                © 2026 PRYX. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+
+        // ADD YOUR CALENDLY LINK HERE
+        const calendlyUrl = "https://calendly.com/preetdpatel-727/30min";
+        
+        function handleBookingClick() {
+            window.open(calendlyUrl, '_blank', 'noopener,noreferrer');
+        }
+    </script>
+</body>
+</html>
